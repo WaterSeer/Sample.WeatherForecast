@@ -25,7 +25,7 @@ RUN addgroup -g 1000 dotnet && \
     adduser -u 1000 -G dotnet -s /bin/sh -D dotnet
 
 WORKDIR /app
-COPY --chown=dotnet:dotnetgroup --from=publish /out .
+COPY --chown=dotnet:dotnet --from=publish /out .
 
 USER dotnet
 EXPOSE 8080
