@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 env:
-  image-name: ghcr.io/WaerSeer/samples-weatherforecast:${{ github.sha }}
+  image-name: ghcr.io/waterseer/samples-weatherforecast:${{ github.sha }}
 
 jobs:
   build-secure-push:
